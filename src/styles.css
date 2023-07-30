@@ -1,0 +1,162 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* CarSlider styles */
+  .car-slider {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .slider-image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-search,
+  .date-picker {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-search input,
+  .date-picker input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .find-car-button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: orange;
+  }
+  /* Home page styles */
+  .home {
+    padding: 20px;
+    background-color: rgb(196, 196, 221);
+  }
+  
+  .home h1 {
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+  }
+  
+  
+  /* Other page styles */
+  /* Add styles for other pages as needed */
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    /* Navbar styles */
+    .navbar-logo {
+      margin-right: auto;
+    }
+    .navbar-links {
+      display: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-links.active {
+      display: block;
+    }
+  
+    /* CarSlider styles */
+    .slider-button {
+      font-size: 16px;
+    }
+  
+    /* Footer styles */
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-container {
+      flex-direction: column;
+    }
+    .location-search,
+    .date-picker {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
